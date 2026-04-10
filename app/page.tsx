@@ -5,7 +5,7 @@ export default function Home() {
     <main className="bg-[#f8fafc]">
       {/* NAVBAR */}
       <nav className="w-full flex items-center justify-between px-8 py-4 bg-white border-b">
-        <h1 className="text-lg font-semibold text-gray-900">
+        <h1 className="text-lg font-semibold text-blue-900">
           AzureEstate
         </h1>
 
@@ -180,7 +180,7 @@ export default function Home() {
           {/* LEFT */}
           <div>
             <h3 className="text-white font-semibold mb-2">
-              Azure Estate
+              Azure Estate Quick Links
             </h3>
             <p className="text-sm">
               Experience luxury real estate with modern design and seamless buying.
