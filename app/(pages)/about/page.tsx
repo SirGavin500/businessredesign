@@ -17,7 +17,7 @@ export default function About() {
         <div className="hidden md:flex justify-center gap-8 text-sm text-gray-600">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/buy">Buy</Link>
+          <Link href="/buypage">Buy</Link>
         </div>
 
         <div className="flex justify-end items-center gap-4">
@@ -82,46 +82,51 @@ export default function About() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black text-gray-400 mt-20">
-        <div className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10 border-t border-gray-700">
-
-          <div>
-            <h3 className="text-white font-semibold mb-2">
-              Azure Estate Quick Links
-            </h3>
-            <p className="text-sm">
-              Experience luxury real estate with modern design and seamless buying.
+      <footer className="bg-black text-gray-400 px-10 pt-14 pb-10 text-sm border-t border-gray-800">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 items-start text-center md:text-left">
+   
+          <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-white text-lg font-semibold mb-3">Azure Estate</h3>
+            <p className="text-gray-500 leading-relaxed max-w-xs">
+              Expertise in luxury real estate, specializing in high-net-worth clientele and prestigious communities.
             </p>
 
             <div className="flex gap-3 mt-4">
-              <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800">
-                <FaFacebookF size={14} className="text-white" />
-              </div>
-              <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800">
-                <FaInstagram size={14} className="text-white" />
-              </div>
-              <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800">
-                <FaTwitter size={14} className="text-white" />
-              </div>
+              <div className="w-8 h-8 bg-gray-800 rounded-md" />
+              <div className="w-8 h-8 bg-gray-800 rounded-md" />
+              <div className="w-8 h-8 bg-gray-800 rounded-md" />
             </div>
           </div>
 
-          <div>
-            <h4 className="text-white text-sm mb-3">Contact</h4>
-            <p className="text-sm">support@azureestate.com</p>
-            <p className="text-sm mt-1">(123) 456-7890</p>
+          <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-white font-medium mb-3">HEADQUARTERS</h3>
+            <p className="text-gray-500 leading-relaxed">
+              422 Pine Street, Suite A<br />
+              San Francisco, CA 94102
+            </p>
+            <p className="mt-3">(209) 555-8743</p>
+            <p>contact@azureestate.com</p>
           </div>
 
-          <div>
-            <h4 className="text-white text-sm mb-3">Newsletter</h4>
-            <div className="flex">
-              <input className="w-full p-2 bg-gray-800 border border-gray-700 text-sm rounded-l-md" />
-              <button className="bg-blue-600 px-4 rounded-r-md text-sm">
-                →
-              </button>
-            </div>
+          <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-white font-medium mb-3">EXPLORE</h3>
+            <ul className="space-y-2">
+              <li className="hover:text-white cursor-pointer">Featured Homes</li>
+              <li className="hover:text-white cursor-pointer">Market Reports</li>
+              <li className="hover:text-white cursor-pointer">Recent Sales</li>
+              <li className="hover:text-white cursor-pointer">Our Team</li>
+              <li className="hover:text-white cursor-pointer">Privacy Policy</li>
+              <li className="hover:text-white cursor-pointer">Contact</li>
+            </ul>
           </div>
+        </div>
 
+        <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 text-center">
+          <p>© 2025 Azure Estate. All rights reserved.</p>
+          <div className="flex gap-6">
+            <span className="hover:text-white cursor-pointer">Terms</span>
+            <span className="hover:text-white cursor-pointer">Privacy</span>
+          </div>
         </div>
       </footer>
 

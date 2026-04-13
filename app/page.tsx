@@ -15,7 +15,7 @@ export default function Home() {
         <div className="hidden md:flex justify-center gap-8 text-sm text-gray-600">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/buy">Buy</Link>
+          <Link href="/buypage">Buy</Link>
         </div>
 
         {/* RIGHT: SEARCH + CONTACT */}

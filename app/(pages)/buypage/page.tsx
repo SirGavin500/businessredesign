@@ -1,21 +1,25 @@
+import Link from "next/link";
 import React from "react";
 
 export default function AzureEstate() {
   return (
     <div className="bg-white text-gray-900">
-      <nav className="w-full flex items-center justify-between px-8 py-4 bg-white border-b">
-        <h1 className="text-lg font-semibold text-blue-900">
+      <nav className="w-full grid grid-cols-3 items-center px-8 py-4 bg-white border-b">
+
+        {/* LEFT: LOGO */}
+        <h1 className="text-lg font-semibold text-gray-900">
           AzureEstate
         </h1>
 
-        <div className=" md:flex gap-8 text-sm text-gray-600">
-          <a href="#">Home</a>
-          <a href="/buypage">Buy</a>
-          <a href="#">About</a>
+        {/* CENTER: LINKS */}
+        <div className="hidden md:flex justify-center gap-8 text-sm text-gray-600">
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/buypage">Buy</Link>
         </div>
 
-        <div className="flex items-center gap-4">
-          
+        {/* RIGHT: SEARCH + CONTACT */}
+        <div className="flex justify-end items-center gap-4">
           <div className="bg-gray-100 px-3 py-1 rounded-md border border-gray-200">
             <input
               type="text"
@@ -27,7 +31,6 @@ export default function AzureEstate() {
           <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">
             Contact
           </button>
-
         </div>
       </nav>
 
