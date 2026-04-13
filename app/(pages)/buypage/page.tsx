@@ -8,17 +8,14 @@ export default function AzureEstate() {
           AzureEstate
         </h1>
 
-        {/* LEFT: LINKS ONLY */}
         <div className=" md:flex gap-8 text-sm text-gray-600">
           <a href="#">Home</a>
           <a href="/buypage">Buy</a>
           <a href="#">About</a>
         </div>
 
-        {/* RIGHT: SEARCH + CONTACT */}
         <div className="flex items-center gap-4">
           
-          {/* SEARCH */}
           <div className="bg-gray-100 px-3 py-1 rounded-md border border-gray-200">
             <input
               type="text"
@@ -27,7 +24,6 @@ export default function AzureEstate() {
             />
           </div>
 
-          {/* CONTACT */}
           <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">
             Contact
           </button>
@@ -35,7 +31,6 @@ export default function AzureEstate() {
         </div>
       </nav>
 
-      {/* Hero */}
       <section className="px-10 py-16 max-w-6xl mx-auto">
         <p className="text-xs tracking-widest text-gray-500 mb-4">
           TAILORED REAL ESTATE SERVICES
@@ -48,7 +43,6 @@ export default function AzureEstate() {
         </p>
       </section>
 
-      {/* Buying Section */}
       <section className="grid md:grid-cols-2 gap-16 px-10 py-16 max-w-6xl mx-auto items-center">
         <div className=" rounded-2xl h-[420px] flex items-end justify-start p-6 shadow-lg">
           <img src="../assets/house.jpg" alt="house" className=" inset-0 w-full h-full object-cover"/>
@@ -84,7 +78,6 @@ export default function AzureEstate() {
         </div>
       </section>
 
-      {/* Strategic Selling */}
       <section className="grid md:grid-cols-2 gap-16 px-10 py-16 max-w-6xl mx-auto items-center">
         <div>
           <h2 className="text-2xl font-semibold mb-4">Strategic Selling</h2>
@@ -116,7 +109,6 @@ export default function AzureEstate() {
         </div>
       </section>
 
-      {/* Advantage Section */}
       <section className="bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white py-20 px-10">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-2xl font-semibold">The Azure Advantage</h2>
@@ -126,7 +118,7 @@ export default function AzureEstate() {
         </div>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 items-stretch">
-          {/* Left Column */}
+
           <div className="grid grid-rows-2 gap-6">
             <div className="bg-gray-800/80 backdrop-blur p-6 rounded-2xl">
               <p className="font-medium">Legal Escrow</p>
@@ -139,7 +131,6 @@ export default function AzureEstate() {
             </div>
           </div>
 
-          {/* Middle Column (Tall Card) */}
           <div className="bg-blue-900 p-6 rounded-2xl flex flex-col justify-between h-full">
             <div>
               <p className="font-medium text-lg">Portfolio Management</p>
@@ -153,7 +144,6 @@ export default function AzureEstate() {
             </button>
           </div>
 
-          {/* Right Column */}
           <div className="grid grid-rows-2 gap-6">
             <div className="bg-gray-800/80 backdrop-blur p-6 rounded-2xl">
               <p className="font-medium">White-Olove Closings</p>
@@ -168,17 +158,16 @@ export default function AzureEstate() {
         </div>
       </section>
 
-      {/* Footer */}
+      
       <footer className="bg-black text-gray-400 px-10 pt-14 pb-10 text-sm border-t border-gray-800">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 items-start text-center md:text-left">
-          {/* Brand */}
+   
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-white text-lg font-semibold mb-3">Azure Estate</h3>
             <p className="text-gray-500 leading-relaxed max-w-xs">
               Expertise in luxury real estate, specializing in high-net-worth clientele and prestigious communities.
             </p>
 
-            {/* Icons row */}
             <div className="flex gap-3 mt-4">
               <div className="w-8 h-8 bg-gray-800 rounded-md" />
               <div className="w-8 h-8 bg-gray-800 rounded-md" />
@@ -186,7 +175,6 @@ export default function AzureEstate() {
             </div>
           </div>
 
-          {/* Headquarters */}
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-white font-medium mb-3">HEADQUARTERS</h3>
             <p className="text-gray-500 leading-relaxed">
@@ -197,7 +185,6 @@ export default function AzureEstate() {
             <p>contact@azureestate.com</p>
           </div>
 
-          {/* Explore (combined) */}
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-white font-medium mb-3">EXPLORE</h3>
             <ul className="space-y-2">
@@ -211,7 +198,6 @@ export default function AzureEstate() {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 text-center">
           <p>© 2025 Azure Estate. All rights reserved.</p>
           <div className="flex gap-6">
