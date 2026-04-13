@@ -10,9 +10,9 @@ export default function Home() {
         </h1>
 
         {/* LEFT: LINKS ONLY */}
-        <div className="hidden md:flex gap-8 text-sm text-gray-600">
+        <div className=" md:flex gap-8 text-sm text-gray-600">
           <a href="#">Home</a>
-          <a href="#">Buy</a>
+          <a href="/buypage">Buy</a>
           <a href="#">About</a>
         </div>
 
