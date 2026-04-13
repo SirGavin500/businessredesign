@@ -1,25 +1,25 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="bg-[#f8fafc]">
       {/* NAVBAR */}
-      <nav className="w-full flex items-center justify-between px-8 py-4 bg-white border-b">
-        <h1 className="text-lg font-semibold text-blue-900">
+      <nav className="w-full grid grid-cols-3 items-center px-8 py-4 bg-white border-b">
+
+        {/* LEFT: LOGO */}
+        <h1 className="text-lg font-semibold text-gray-900">
           AzureEstate
         </h1>
 
-        {/* LEFT: LINKS ONLY */}
-        <div className="hidden md:flex gap-8 text-sm text-gray-600">
-          <a href="#">Home</a>
-          <a href="#">Buy</a>
-          <a href="#">About</a>
+        {/* CENTER: LINKS */}
+        <div className="hidden md:flex justify-center gap-8 text-sm text-gray-600">
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/buy">Buy</Link>
         </div>
 
         {/* RIGHT: SEARCH + CONTACT */}
-        <div className="flex items-center gap-4">
-          
-          {/* SEARCH */}
+        <div className="flex justify-end items-center gap-4">
           <div className="bg-gray-100 px-3 py-1 rounded-md border border-gray-200">
             <input
               type="text"
@@ -28,11 +28,9 @@ export default function Home() {
             />
           </div>
 
-          {/* CONTACT */}
           <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">
             Contact
           </button>
-
         </div>
       </nav>
 
@@ -74,7 +72,7 @@ export default function Home() {
       {/* MAIN CONTENT */}
       <section className="max-w-6xl mx-auto px-6 mt-12 relative z-20">
         <div className="grid md:grid-cols-2 gap-8">
-          
+
           {/* FORM CARD */}
           <div className="bg-white p-6 rounded-xl shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-gray-900">
